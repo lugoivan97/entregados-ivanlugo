@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(66, 212, 205);
+}
+body h1{
+    text-align: center !important;
+    font-family: cursive !important;
+    
+}
+body h1 a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    color: blue;
+    
+}
+.imgpromo1, .imgpromo2, .imgpromo3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: aliceblue;
+    margin: 5px;
+    padding: 1px;
+}
+body img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body main form{
+    text-align:center;
+}
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mapa{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.imgnos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.logoig{
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+.novedad{
+    margin: 2px;
+}
+.img-novedad{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+.productos{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80% ;
+    gap: 20px;
+    text-align: center;
+}
+.producto{
+    flex: 0 0 calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.producto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.producto button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .productos {
+        flex-direction: column;
+    }
+
+    .producto {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .producto {
+        flex: 0 0 calc(70% - 20px);
+    }
+}
